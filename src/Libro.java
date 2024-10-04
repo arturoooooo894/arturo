@@ -1,5 +1,4 @@
 import java.io.Serializable;
-import java.time.LocalDate;
 
 public class Libro implements Serializable{
     private String título;
@@ -8,7 +7,7 @@ public class Libro implements Serializable{
     private double precio;
     private transient double Descuento;
 
-    public Libro(String título, String autor, String isbn, Double precio) {
+    public Libro(String título, String autor, String isbn, Double precio, Double Descuento) {
         this.título = título;
         this.autor = autor;
         this.isbn = isbn;
